@@ -1,3 +1,7 @@
+## Class diagram
+![alt text](https://github.com/daniel117622/entrevista_ai/blob/main/estructura_de_clases.PNG?raw=true)
+
+
 ## Usage : 
     - Install dependencies using the requirements.txt file
     - Run the main.py file.
