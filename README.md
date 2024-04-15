@@ -17,7 +17,7 @@ mexico.py , unitedstates.py : This classes perform the core tasks of getting the
 ipynb files : This files were used during development to carefully determine the data structures retrieved from the DOM. Careful consideration was taken while choosing the correct data structures and error handling was taken into consideration by using default_dicts and default values for the dataclasses
 
 ## Further considerations: 
-The GUI of the program is quite simple. It could be improved with tkinter or other GUI frameworks. Also the program could later write to different sheets of the same Excel files.
+The GUI of the program is quite simple. It could be improved with tkinter or other GUI frameworks. Also the program could later write to different sheets of the same Excel files. To create better looking excel files, I was planning in using openpyxl directly to apply styles and cell-fitting methods for the final files. 
 
 
 
