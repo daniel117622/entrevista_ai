@@ -47,40 +47,62 @@ if __name__ == '__main__':
             table_data = mexico_parser.first_table_to_data()
             print("Seleccione el nombre del archivo a guardar estos datos sin la extensión: ")
             file_name = input("---> ")
-            dw = DataWriter(f"./{file_name}.xlsx")
-            dw.write_excel_table1(table_data)
+            try:
+                dw = DataWriter(f"./{file_name}.xlsx")
+                dw.write_excel_table1(table_data)
+                print("Datos guardados correctamente.")
+            except Exception as e:
+                print(f"Error al escribir el archivo: {e}")
         elif user_input == "2":
             table_data = mexico_parser.second_table_to_data()
             print("Seleccione el nombre del archivo a guardar estos datos sin la extensión: ")
             file_name = input("---> ")
-            dw = DataWriter(f"./{file_name}.xlsx")
-            dw.write_excel_table2(table_data)
+            try:
+                dw = DataWriter(f"./{file_name}.xlsx")
+                dw.write_excel_table2(table_data)
+                print("Datos guardados correctamente.")
+            except Exception as e:
+                print(f"Error al escribir el archivo: {e}")
         elif user_input == "3":
             table_data = mexico_parser.third_table_to_data()
             print("Seleccione el nombre del archivo a guardar estos datos sin la extensión: ")
             file_name = input("---> ")
-            dw = DataWriter(f"./{file_name}.xlsx")
-            dw.write_excel_table3(table_data)
+            try:
+                dw = DataWriter(f"./{file_name}.xlsx")
+                dw.write_excel_table3(table_data)
+                print("Datos guardados correctamente.")
+            except Exception as e:
+                print(f"Error al escribir el archivo: {e}")
         elif user_input == "4":
             table_data = united_parser.get_state_data()
             print("Seleccione el nombre del archivo a guardar estos datos sin la extensión: ")
             file_name = input("---> ")
-            dw = DataWriter(f"./{file_name}.xlsx")
-            dw.write_us_table(table_data)
+            try:
+                dw = DataWriter(f"./{file_name}.xlsx")
+                dw.write_us_table(table_data)
+                print("Datos guardados correctamente.")
+            except Exception as e:
+                print(f"Error al escribir el archivo: {e}")
         elif user_input == "5":
             table_data = mexico_parser.extract_toponimias()
             print("Seleccione el nombre del archivo a guardar estos datos sin la extensión: ")
             file_name = input("---> ")
-            dw = DataWriter(f"./{file_name}.xlsx")
-            dw.write_excel_table3()
+            try:
+                dw = DataWriter(f"./{file_name}.xlsx")
+                dw.write_excel_table3()
+                print("Datos guardados correctamente.")
+            except Exception as e:
+                print(f"Error al escribir el archivo: {e}")
         elif user_input == "6":
             table_data = united_parser.get_state_data()
             print("Seleccione el nombre del archivo a guardar estos datos sin la extensión: ")
             file_name = input("---> ")
-            dw = DataWriter(f"./{file_name}.xlsx")
-            dw.write_us_etimologia(table_data)
-        else:
-            exit()
+            try:
+                dw = DataWriter(f"./{file_name}.xlsx")
+                dw.write_us_etimologia(table_data)
+                print("Datos guardados correctamente.")
+            except Exception as e:
+                print(f"Error al escribir el archivo: {e}")
             
         print("="*20)
         print("Desea realizar otra operación")
