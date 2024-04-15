@@ -1,4 +1,5 @@
 ## Class diagram
+Data formats is used to tightly couple the data extraction and data storing classes. The names of the dataclasses might not be the best, but due to constantly working with typescript thats what I decided to use.
 ![alt text](https://github.com/daniel117622/entrevista_ai/blob/main/estructura_de_clases.PNG?raw=true)
 
 
